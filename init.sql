@@ -1,10 +1,10 @@
-CREATE TABLE IF NOT EXISTS products (
+CREATE TABLE products (
   id SERIAL PRIMARY KEY,
-  name VARCHAR(100) NOT NULL,
+  name VARCHAR(100),
   about VARCHAR(500),
-  price FLOAT NOT NULL
+  price FLOAT
 );
 
--- Donnée de test
 INSERT INTO products (name, about, price) VALUES
-  ('My first game', 'This is an awesome game', 60.0);
+  ('My first game', 'This is an awesome game', '60')
+  
